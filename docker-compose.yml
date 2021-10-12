@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  squarfish.identity:
+    image: ${DOCKER_REGISTRY-}squarfishidentity
+    build:
+      context: .
+      dockerfile: Squarfish.Identity/Dockerfile
